@@ -43,21 +43,7 @@ let fruits = [
 ]
 
 // Express Routes
-app.get("/users", (req, res) => {
 
-})
-
-app.get("/users/:id", (req, res) => {
-
-})
-
-app.get("/fruits", (req, res) => {
-
-})
-
-app.get("/fruits/:id", (req, res) => {
-
-})
 
 
 
