@@ -1,0 +1,28 @@
+{
+  "name": "express-router",
+  "version": "1.0.0",
+  "description": "Create Express routers using express.Router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MultiverseLearningProducts/express-router.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MultiverseLearningProducts/express-router/issues"
+  },
+  "homepage": "https://github.com/MultiverseLearningProducts/express-router#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
