@@ -4,7 +4,9 @@
   "description": "Create Express routers using express.Router",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seed.js",
+    "test": "jest --watch",
     "dev-start": "nodemon server.js"
   },
   "repository": {
@@ -20,7 +22,9 @@
   "homepage": "https://github.com/MultiverseLearningProducts/express-router#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "express-validator": "^6.14.0"
+    "express-validator": "^6.14.0",
+    "sequelize": "^6.31.0",
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
