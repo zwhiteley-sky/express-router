@@ -37,8 +37,8 @@ The farmer has tasked you with completing the following to get the server and ro
 ## Part 2: Express Validator
 
 The farmer is so happy with your work! Apply server-side validation to your API to ensure that: 
-- You cannot create a user without a name
-- You cannot create a fruit without a color
+- You cannot create a user without a `name`
+- You cannot create a fruit without a `color`
 
 1. Run `npm install` to install the necessary dependencies for this assignment.
 2. Require the `“express-validator”` package in your users router.
@@ -55,5 +55,12 @@ The farmer is so happy with your work! Apply server-side validation to your API 
     - A key named error
     - A value containing the list of errors caught
     - In any other case, respond with the list of all the users including the newly added user
-10. Test your endpoints using Postman. Try to add a user without a name, or a fruit without a color.
+10. Test your endpoints using Postman. Try to add a user without a name or a fruit without a color.
 11. In `index.test.js`, create unit tests for the functionality that you constructed above.
+
+## Extension Problems 🚀
+1. For the `POST /users` route within the array `[]`, include a second item that checks that the `"age"` in the `request.body` is not empty and doesn’t only contain whitespace.
+2. For the `POST /fruits` route within the array `[]`, include a second item that checks that the `"name"` in the request.body is not empty and doesn’t only contain whitespace.
+3. Update the `PUT /users/:id` and `PUT fruits/:id` routes with server side validation like you did for the `POST` routes.
+4. Within the same `POST /users route`, use Express Validator to check that the value added to the "name" field has a length between 5 and 15 characters.
+5. Within the same `POST /fruits` route, use Express Validator to check that the value added to the "name" field has a length between 5 and 20 characters.
