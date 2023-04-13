@@ -18,7 +18,7 @@ The farmer has tasked you with completing the following to get the server and ro
 4. Create a `POST /users` route that creates a new user in the database.
 5. Create a `PUT /users/:id` route that updates the database entry that corresponds to the provided id (e.g. `PUT /users/2` updates the 2nd user).
 6. Create a `DELETE /users/:id` route that deletes the database entry that corresponds to the provided id (e.g. `DELETE users/2 deletes the 2nd user).
-7. Export the users router, import the router to `server.js`, and setup the the router within your main Express server. 
+7. Export the users router, import the router to `src/app.js`, and setup the the router within your main Express server. 
 8. Test your endpoints using Postman.
 9. In `index.test.js`, create unit tests for the functionality that you constructed above.
 
@@ -30,7 +30,7 @@ The farmer has tasked you with completing the following to get the server and ro
 4. Create a `POST /fruit` route that creates a new fruit in the database.
 5. Create a `PUT /fruits/:id` route that updates the database entry that corresponds to the provided id (e.g. `PUT /fruits/2` updates the 2nd fruit).
 6. Create a `DELETE /fruits/:id` route that deletes the database entry that corresponds to the provided id (e.g. `DELETE fruits/2 deletes the 2nd fruit).
-7. Export the fruits router, import the router to `server.js`, and setup the the router within your main Express server. 
+7. Export the fruits router, import the router to `src/app.js`, and setup the the router within your main Express server. 
 8. Test your endpoints using Postman.
 9. In `index.test.js`, create unit tests for the functionality that you constructed above.
 
