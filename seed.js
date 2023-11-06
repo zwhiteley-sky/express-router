@@ -8,4 +8,4 @@ const syncSeed = async () => {
     await User.bulkCreate(seedUsers);
 }
 
-syncSeed()
+module.exports = syncSeed;

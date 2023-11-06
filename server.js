@@ -1,12 +1,8 @@
 const app = require('./src/app')
+const seed = require("./seed");
 const port = 3000
-// Express Routes
 
 
-
-
-
-
-app.listen(port, () => {
+seed().then(() => { app.listen(port, () => {
     console.log(`App listening on port ${port}`)
-})
+})});
