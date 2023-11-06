@@ -31,6 +31,15 @@ describe("/users tests", () => {
         expect(get_response.body).toMatchObject(send_data);
     });
 
+    test("cannot create user with whitespace name", async () => {
+        const send_data = { name: "     ", age: 18 };
+
+        const response = await request(app)
+            .post("/users")
+            .send(send_data)
+            .expect(400);
+    });
+
     test("can update user", async () => {
         const send_data = { name: "Zachary" };
 
@@ -80,6 +89,15 @@ describe("/fruits tests", () => {
         
         const get_response = await request(app).get("/fruits/" + response.body.id.toString());
         expect(get_response.body).toMatchObject(send_data);
+    });
+
+    test("cannot create fruit", async () => {
+        const send_data = { name: "D", color: "   " };
+
+        const response = await request(app)
+            .post("/fruits")
+            .send(send_data)
+            .expect(400);
     });
 
     test("can update fruit", async () => {
